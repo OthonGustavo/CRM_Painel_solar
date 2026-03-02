@@ -1,25 +1,37 @@
+# SolarControl ERP - Gestão de Energia Renovável
 
-SolarControl ERP
-Este é um sistema de gestão desenvolvido para centralizar a operação de empresas de energia solar. O projeto foca em resolver o problema da fragmentação de informações, unindo o comercial (vendas) com o operacional (estoque) em uma única interface.
+## Desafio de projeto
+Para este desafio, você precisará demonstrar competência técnica na estruturação de um sistema de gestão (ERP) moderno, integrando uma interface intuitiva em React com um ecossistema de dados funcional.
 
-O que o projeto entrega hoje:
-Gestão de Leads (CRM): Uma área para cadastrar e monitorar potenciais clientes, permitindo acompanhar o progresso de cada negociação.
+## Contexto
+O projeto consiste em uma plataforma centralizada para empresas do setor fotovoltaico, focada em resolver a fragmentação de informações entre o comercial e o estoque.
 
-Controle de Inventário: Módulo para gerenciamento de materiais técnicos, como painéis e inversores, essencial para o planejamento de instalações.
+A aplicação permite o controle estratégico de oportunidades de negócio (Leads) e a gestão técnica de componentes de hardware (Inventário), tudo visualizado através de um Dashboard de métricas em tempo real.
 
-Dashboard de Métricas: Uma visão geral da saúde do negócio com gráficos interativos que mostram dados de desempenho em tempo real.
+O sistema utiliza componentes modulares e um gerenciamento de estado eficiente para alternar entre os módulos operacionais da empresa.
 
-Interface Profissional: Navegação fluida com barra lateral dinâmica, busca global no cabeçalho e design totalmente responsivo.
+## Métodos esperados
+É esperado que a aplicação entregue as seguintes funcionalidades principais:
 
-Estrutura Escalável: O sistema já possui rotas e componentes de "Módulo em Desenvolvimento", facilitando a expansão para novas funcionalidades sem quebrar a interface atual.
+**Interface e Navegação**
 
-Decisões Técnicas:
-React 19 + TypeScript: Escolhi essa combinação para ter um código mais seguro, fácil de manter e com as funcionalidades mais recentes da biblioteca.
+* **Dashboard**: Visualização de indicadores de desempenho e gráficos de saúde do negócio.
+* **Gestão de Leads**: Fluxo completo para cadastro e acompanhamento de clientes no funil de vendas.
+* **Inventário**: Controle detalhado de painéis solares, inversores e componentes técnicos.
+* **Header Inteligente**: Sistema de busca global e notificações integradas para agilidade operacional.
 
-Tailwind CSS 4: Utilizado para criar um layout limpo e moderno de forma rápida, garantindo que o sistema seja leve.
+**Tecnologias Utilizadas**
 
-Visualização de Dados: Implementação do Recharts para transformar dados brutos em gráficos compreensíveis.
+| Componente | Tecnologia | Uso |
+| :--- | :--- | :--- |
+| **Frontend** | React 19 + TypeScript | Interface declarativa e segurança de tipos. |
+| **Estilização** | Tailwind CSS 4 | Design responsivo e sistema de design moderno. |
+| **Gráficos** | Recharts | Visualização dinâmica de dados e métricas. |
+| **Backend** | Express + Node.js | Gerenciamento de APIs e lógica de servidor. |
+| **Persistência** | Better-SQLite3 | Banco de dados relacional para armazenamento local. |
+| **IA Ready** | @google/genai | Estrutura preparada para automação inteligente. |
 
-Backend Integrado: Estrutura pronta com Express e SQLite para persistência de dados local, permitindo que o sistema funcione como uma aplicação completa.
+## Solução
+O código base já apresenta a arquitetura de rotas e a interface de usuário estruturada. O desafio atual foca na implementação da lógica de persistência, garantindo que os dados inseridos nos módulos de **Leads** e **Estoque** sejam processados corretamente pelo backend e armazenados no banco de dados SQLite, mantendo a integridade das informações em todo o ciclo de vida da aplicação.
 
-Preparação para IA: O projeto já inclui a biblioteca do Google Gemini, deixando o caminho livre para implementar automações inteligentes no futuro.
+Certifique-se de validar as tipagens no `src/types.ts` e configurar o ambiente via `npm install` antes de subir o servidor de desenvolvimento.
